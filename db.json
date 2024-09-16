@@ -1,0 +1,242 @@
+[
+  {
+    "name": "Veg Chowmein",
+    "cost": 110,
+    "description": "Stir-fried noodles with mixed vegetables.",
+    "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/ombvibqygdwefzl0jpbs"
+  },
+  {
+    "name": "Veg Manchurian",
+    "cost": 130,
+    "description": "Crispy vegetable balls in a tangy and spicy sauce (Dry or Gravy).",
+    "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/jcjomtjbsa95qjbekjho"
+  },
+  {
+    "name": "Paneer Chilli",
+    "cost": 172,
+    "description": "Fried paneer cubes in a spicy and tangy chili sauce (Dry or Gravy).",
+    "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/ngdlje01nnb9amr5xu2n"
+  },
+  {
+    "name": "Green Salad",
+    "cost": 60,
+    "description": "A fresh mix of green vegetables and herbs.",
+    "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/ff0whb6aphp3evdu3txa"
+  },
+  {
+    "name": "Roasted Papad",
+    "cost": 20,
+    "description": "Crispy and crunchy roasted papadum.",
+    "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/nqw4lbnyc7ewjqrzqjyw"
+  },
+  {
+    "name": "Black Mix Daal Fry",
+    "cost": 120,
+    "description": "A hearty mix of lentils cooked with spices.",
+    "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/jcjomtjbsa95qjbekjho"
+  },
+  {
+    "name": "Daal Baati",
+    "cost": 190,
+    "description": "Traditional Rajasthani dish with 7 pieces of baati and 400g daal.",
+    "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/nqw4lbnyc7ewjqrzqjyw"
+  },
+  {
+    "name": "Baati",
+    "cost": 20,
+    "description": "Traditional hard wheat rolls, often served with daal.",
+    "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/nqw4lbnyc7ewjqrzqjyw"
+  },
+  {
+    "name": "Red Pasta Regular Gravy",
+    "cost": 130,
+    "description": "Pasta in a rich and tangy red tomato-based sauce.",
+    "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/ombvibqygdwefzl0jpbs"
+  },
+  {
+    "name": "Kakdi Salad",
+    "cost": 50,
+    "description": "Refreshing cucumber salad with herbs and spices.",
+    "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/ff0whb6aphp3evdu3txa"
+  },
+  {
+    "name": "Tomato Salad",
+    "cost": 50,
+    "description": "Simple and fresh tomato salad with herbs.",
+    "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/ff0whb6aphp3evdu3txa"
+  },
+  {
+    "name": "Cucumber Salad",
+    "cost": 60,
+    "description": "Chilled cucumber slices with a light dressing.",
+    "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/ff0whb6aphp3evdu3txa"
+  },
+  {
+    "name": "Masala Papad",
+    "cost": 30,
+    "description": "Crispy papadum topped with a spicy mixture of onions, tomatoes, and spices.",
+    "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/g0dj51me7qp1t4yy2fnz"
+  },
+  {
+    "name": "Paneer Butter Masala",
+    "cost": 170,
+    "description": "Creamy butter-based sauce with soft paneer cubes.",
+    "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/yg2dl0p5juwn2r9et4lj"
+  },
+  {
+    "name": "Paneer Bhurji",
+    "cost": 180,
+    "description": "Scrambled paneer cooked with onions, tomatoes, and spices.",
+    "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/uijxhznei92sllvi4kad"
+  },
+  {
+    "name": "Palak Paneer",
+    "cost": 160,
+    "description": "Paneer cubes in a rich spinach gravy.",
+    "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/j7qhyne8ipgu0xz19quq"
+  },
+  {
+    "name": "Shahi Paneer",
+    "cost": 180,
+    "description": "Luxurious paneer dish in a creamy, mildly spiced gravy.",
+    "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/jcjomtjbsa95qjbekjho"
+  },
+  {
+    "name": "Matar Paneer",
+    "cost": 160,
+    "description": "Paneer cubes cooked with green peas in a spiced gravy.",
+    "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/yg2dl0p5juwn2r9et4lj"
+  },
+  {
+    "name": "Butter Dal Fry",
+    "cost": 120,
+    "description": "Lentils cooked with butter and spices for a rich flavor.",
+    "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/yo4rp9kupkqxilihdfvo"
+  },
+  {
+    "name": "Dal Tadka Spicy",
+    "cost": 120,
+    "description": "Spicy lentils tempered with aromatic spices.",
+    "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/yo4rp9kupkqxilihdfvo"
+  },
+  {
+    "name": "Dal Fry",
+    "cost": 110,
+    "description": "Lentils cooked with spices for a comforting dish.",
+    "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/yo4rp9kupkqxilihdfvo"
+  },
+  {
+    "name": "Dal Palak",
+    "cost": 100,
+    "description": "Lentils cooked with spinach and spices.",
+    "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/jcjomtjbsa95qjbekjho"
+  },
+  {
+    "name": "Gujarati Dal",
+    "cost": 100,
+    "description": "Sweet and tangy dal with a blend of spices.",
+    "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/yo4rp9kupkqxilihdfvo"
+  },
+  {
+    "name": "Kadhi",
+    "cost": 70,
+    "description": "A tangy yogurt-based curry with spices.",
+    "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/eg3gpxkqrwiw8iln1xeq"
+  },
+  {
+    "name": "Khichdi",
+    "cost": 70,
+    "description": "Comforting rice and lentil porridge with mild spices.",
+    "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/exb01vclbkj51mjmhcqg"
+  },
+  {
+    "name": "Masala Khichdi",
+    "cost": 90,
+    "description": "Spiced rice and lentil porridge with a rich flavor.",
+    "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/exb01vclbkj51mjmhcqg"
+  },
+  {
+    "name": "Sev Tomato",
+    "cost": 110,
+    "description": "Tomato curry topped with crispy sev.",
+    "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/jcjomtjbsa95qjbekjho"
+  },
+  {
+    "name": "Vatana Batata",
+    "cost": 100,
+    "description": "Potato and green peas curry with spices.",
+    "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/jcjomtjbsa95qjbekjho"
+  },
+  {
+    "name": "Cheese Naan",
+    "cost": 30,
+    "description": "Naan stuffed with melted cheese.",
+    "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/ff0whb6aphp3evdu3txa"
+  },
+  {
+    "name": "Butter Cheese Naan",
+    "cost": 35,
+    "description": "Cheese naan brushed with butter.",
+    "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/ff0whb6aphp3evdu3txa"
+  },
+  {
+    "name": "Missi Roti",
+    "cost": 25,
+    "description": "Spiced Indian flatbread made with gram flour.",
+    "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/exb01vclbkj51mjmhcqg"
+  },
+  {
+    "name": "Lachha Paratha",
+    "cost": 30,
+    "description": "Layered whole wheat flatbread with a crisp texture.",
+    "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/exb01vclbkj51mjmhcqg"
+  },
+  {
+    "name": "Pulao",
+    "cost": 80,
+    "description": "Aromatic rice cooked with spices and vegetables.",
+    "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/exb01vclbkj51mjmhcqg"
+  },
+  {
+    "name": "Plain Rice",
+    "cost": 60,
+    "description": "Simple steamed rice.",
+    "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/exb01vclbkj51mjmhcqg"
+  },
+  {
+    "name": "Curd Rice",
+    "cost": 90,
+    "description": "Rice mixed with yogurt and seasoned with spices.",
+    "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/exb01vclbkj51mjmhcqg"
+  },
+  {
+    "name": "Raita",
+    "cost": 50,
+    "description": "Yogurt-based side dish with vegetables and spices.",
+    "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/exb01vclbkj51mjmhcqg"
+  },
+  {
+    "name": "Veg Biryani",
+    "cost": 150,
+    "description": "Fragrant rice cooked with mixed vegetables and spices.",
+    "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/nqw4lbnyc7ewjqrzqjyw"
+  },
+  {
+    "name": "Pasta",
+    "cost": 130,
+    "description": "Pasta served with a choice of sauce.",
+    "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/ombvibqygdwefzl0jpbs"
+  },
+  {
+    "name": "Noodles",
+    "cost": 110,
+    "description": "Stir-fried noodles with vegetables and spices.",
+    "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/ombvibqygdwefzl0jpbs"
+  },
+  {
+    "name": "Biryani",
+    "cost": 170,
+    "description": "Spiced rice dish with vegetables or meat.",
+    "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/ombvibqygdwefzl0jpbs"
+  }
+]
