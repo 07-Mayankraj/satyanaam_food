@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      contviewportent="width=device-width, initial-scale=1.0"
+    />
+    <title>Food Menu</title>
+    <link rel="stylesheet" href="/css/menu.css" />
+    <link rel="stylesheet" href="/css/navbar.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-title">
+        Vandana the family dining hall & restaurant
+      </div>
+      <ul class="navbar-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="./cart.html">Cart</a></li>
+        <li><a href="#account">Account</a></li>
+      </ul>
+    </nav>
+
+    <h2 class="advice">Select any item to add cart</h2>
+    <div class="main">
+        <div class="left-panel">
+            <h2>Filter By Choice</h2>
+            <div>
+              <label for="daal"><input type="radio" name="choice" id="daal" />Daal</label>
+              <label for="sabji"><input type="radio" name="choice" id="sabji" />Sabji</label>
+              <label for="rice"><input type="radio" name="choice" id="rice" />Rice</label>
+              <label for="wheat"><input type="radio" name="choice" id="wheat" />Rotiya</label>
+              <label for="fast-food"><input type="radio" name="choice" id="fast-food" />Fast-Food</label>
+          
+              <h2>Sort by Price</h2>
+              <select id="none">
+                <option value="">None</option>
+                <option value="low">Low to High</option>
+                <option value="high">High to Low</option>
+              </select>
+            </div>
+          </div>
+          
+      <div class="menu-container"></div>
+    </div>
+    <script type="module" src="../script/store.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>
