@@ -2,13 +2,16 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      contviewportent="width=device-width, initial-scale=1.0"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Food Menu</title>
     <link rel="stylesheet" href="/css/menu.css" />
     <link rel="stylesheet" href="/css/navbar.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
     <nav class="navbar">
@@ -21,27 +24,36 @@
         <li><a href="#account">Account</a></li>
       </ul>
     </nav>
-
+    <button type="submit">
+      <span class="fa fa-envelope"></span> Email Us!
+    </button>
+    <span class="fa fa-bars"></span>
     <h2 class="advice">Select any item to add cart</h2>
     <div class="main">
-        <div class="left-panel">
-            <h2>Filter By Choice</h2>
-            <div>
-              <label for="daal"><input type="radio" name="choice" id="daal" />Daal</label>
-              <label for="sabji"><input type="radio" name="choice" id="sabji" />Sabji</label>
-              <label for="rice"><input type="radio" name="choice" id="rice" />Rice</label>
-              <label for="wheat"><input type="radio" name="choice" id="wheat" />Rotiya</label>
-              <label for="fast-food"><input type="radio" name="choice" id="fast-food" />Fast-Food</label>
-          
-              <h2>Sort by Price</h2>
-              <select id="none">
-                <option value="">None</option>
-                <option value="low">Low to High</option>
-                <option value="high">High to Low</option>
-              </select>
-            </div>
-          </div>
-          
+      <div class="left-panel">
+        <h2>Filter By Choice</h2>
+        <div>
+          <label><input type="radio" name="choice" data-id="a" />Salad</label>
+          <label><input type="radio" name="choice" data-id="2" />Papad</label>
+          <label><input type="radio" name="choice" data-id="3" />Paneer Ka Swad</label>
+          <label><input type="radio" name="choice" data-id="4" />Daal ka Tadka</label>
+          <label><input type="radio" name="choice" data-id="5" />Sabzio Ka Khazana</label>
+          <label><input type="radio" name="choice" data-id="6" />Veg. & Kofta</label>
+          <label><input type="radio" name="choice" data-id="7" />Gujrati Menu</label>
+          <label><input type="radio" name="choice" data-id="8" />Garma Garam Tawe Se</label>
+          <label><input type="radio" name="choice" data-id="9" />Basmati Ki Bahar</label>
+          <label><input type="radio" name="choice" data-id="10" />Meethe Manuhar</label>
+          <label><input type="radio" name="choice" data-id="11" />Dahi & Raita</label>
+          <label><input type="radio" name="choice" data-id="12" />little To Much</label>
+          <h2>Sort by Price</h2>
+          <select id="priceSort">
+            <option value="">None</option>
+            <option value="low">Low to High</option>
+            <option value="high">High to Low</option>
+          </select>
+        </div>
+      </div>
+
       <div class="menu-container"></div>
     </div>
     <script type="module" src="../script/store.js"></script>
