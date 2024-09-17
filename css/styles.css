@@ -1,6 +1,6 @@
 body {
-    font-family: "Montserrat", sans-serif;
-    text-align: center;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
 }
 
 h1,
@@ -9,192 +9,214 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Montserrat";
+  font-family: "Montserrat";
 }
 
 p {
-    color: #3b3b3b;
+  color: #3b3b3b;
 }
-
 
 /* headingggggggggg */
 
 .big-heading {
-    font-family: "Montserrat, sans-serif";
-    font-size: 3rem;
-    line-height: 1.5;
-    font-weight: 900;
-    color: #fff;
+  font-family: "Montserrat, sans-serif";
+  font-size: 3rem;
+  line-height: 1.5;
+  font-weight: 900;
+  color: #fff;
 }
-
 
 /* contianers */
 
 .container-fluid {
-    padding: 7% 15%;
+  padding: 7% 15%;
 }
-
 
 /* nav-bar */
 
 .navbar {
-    padding: 0 0 4.5rem;
+  padding: 0 0 4.5rem;
 }
 
 .navbar-brand {
-    font-family: "Ubuntu", sans-serif;
-    font-size: 2rem;
-    font-weight: bold;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 .nav-item {
-    padding: 0 18px;
+  padding: 0 18px;
 }
 
 .nav-link {
-    font-size: 1.2rem;
-    font-family: "Montserrat";
+  font-size: 1.2rem;
+  font-family: "Montserrat";
 }
 
 .download-button {
-    margin: 5% 3% 5% 0;
+  margin: 5% 3% 5% 0;
 }
-
 
 /* titlesection */
 
 #title {
-    background-color: #c06014;
-    text-align: left;
+  background-color: #c06014;
+  text-align: left;
 }
 
 #title .container-fluid {
-    padding: 3% 15% 7%;
+  padding: 3% 15% 7%;
 }
 
-.whatapp_link {
-    color: white;
+.whatsapp a,
+.menupage a {
+  display: inline-block;
+  padding: 15px 25px;
+  color: white;
+  background-color: #1ebe57;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  font-size: 16px;
+  margin: 10px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  border: none;
+  box-shadow: none;
 }
 
-.whatapp_link:hover {
-    color: rgb(240, 231, 231);
+.whatsapp a:hover {
+  color: #11a146;
+  background-color: rgb(236, 236, 236);
+
+  transform: scale(1.05);
 }
 
-.swiggy_link {
-    color: white;
+.menupage a {
+    border: 1px solid black;
+  background-color: #3498db00;
 }
 
-.swiggy_link:hover {
-    color: black;
+.menupage a:hover {
+    color: #c06014;
+  background-color: rgb(236, 236, 236);
+  transform: scale(1.05);
+}
+
+.whatsapp a span,
+.menupage a span {
+  margin-right: 5px;
+}
+
+button.whatsapp,
+button.menupage {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: none;
+  outline: none;
 }
 
 .iphone {
-    /* margin: 30px auto auto 40px; */
-    transform: rotate(25deg);
-    width: 60%;
-    position: absolute;
-    right: 30%;
+  /* margin: 30px auto auto 40px; */
+  transform: rotate(25deg);
+  width: 60%;
+  position: absolute;
+  right: 30%;
 }
-
 
 /* features section */
 
 #features {
-    background-color: white;
-    position: relative;
-    z-index: 1;
+  background-color: white;
+  position: relative;
+  z-index: 1;
 }
 
 .feature-title {
-    font-size: 1.5rem;
-    font-weight: bold;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .feature-box {
-    padding: 5%;
+  padding: 5%;
 }
 
 .icon {
-    margin-bottom: 1rem;
-    color: #c06014;
+  margin-bottom: 1rem;
+  color: #c06014;
 }
 
 .icon:hover {
-    color: #131213;
+  color: #131213;
 }
-
 
 /* food items  carousel part*/
 
 #food_items {
-    background-color: #c06014;
-    /* color: #461111; */
+  background-color: #c06014;
+  /* color: #461111; */
 }
 
 .items-profile {
-    width: 45%;
-    margin: 20px;
-    border-radius: 100%;
+  width: 45%;
+  margin: 20px;
+  border-radius: 100%;
 }
-
 
 /* pricing section */
 
 #pricing {
-    padding: 100px;
+  padding: 100px;
 }
 
 .full_meal {
-    padding-top: 50px;
+  padding-top: 50px;
 }
 
 .meal_heading {
-    font-size: 2rem;
-    font-family: "Ubuntu", sans-serif;
+  font-size: 2rem;
+  font-family: "Ubuntu", sans-serif;
 }
 
 .pricing-column {
-    padding: 3% 0%;
+  padding: 3% 0%;
 }
 
 .price-text {
-    font-size: 3rem;
-    line-height: 1.5;
-    font-weight: bold;
+  font-size: 3rem;
+  line-height: 1.5;
+  font-weight: bold;
 }
-
 
 /* cta */
 
 #cta {
-    background-color: #c06014;
-    color: white;
+  background-color: #c06014;
+  color: white;
 }
 
 #cta .container-fluid {
-    padding: 3%;
+  padding: 3%;
 }
-
 
 /* foooter */
 
 #footer {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 .social-icons {
-    margin: 20px 10px;
+  margin: 20px 10px;
 }
-
 
 /* media quary */
 
 @media (max-width: 1028px) {
-    #title {
-        text-align: center;
-    }
-    .iphone {
-        position: static;
-        transform: rotate(0);
-    }
+  #title {
+    text-align: center;
+  }
+  .iphone {
+    position: static;
+    transform: rotate(0);
+  }
 }
