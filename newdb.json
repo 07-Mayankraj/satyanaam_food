@@ -1,0 +1,452 @@
+[
+  {
+    "name": "Green Salad",
+    "cost": 40,
+    "description": "A fresh mix of green vegetables.",
+    "id": "a01"
+  },
+  {
+    "name": "Kakdi Salad",
+    "cost": 35,
+    "description": "Refreshing cucumber salad.",
+    "id": "a02"
+  },
+  {
+    "name": "Tomato Salad",
+    "cost": 40,
+    "description": "Simple salad made with fresh tomatoes.",
+    "id": "a03"
+  },
+  {
+    "name": "Kachumber Salad",
+    "cost": 40,
+    "description": "A mix of diced vegetables with a tangy dressing.",
+    "id": "a04"
+  },
+  {
+    "name": "Roasted Papad",
+    "cost": 15,
+    "description": "Crispy, roasted papadum.",
+    "id": 201
+  },
+  {
+    "name": "Fry Papad",
+    "cost": 18,
+    "description": "Deep-fried papadum.",
+    "id": 202
+  },
+  {
+    "name": "Roasted Masala Papad",
+    "cost": 20,
+    "description": "Papadum topped with roasted spices.",
+    "id": 203
+  },
+  {
+    "name": "Fry Masala Papad",
+    "cost": 25,
+    "description": "Deep-fried papadum with masala seasoning.",
+    "id": 204
+  },
+  {
+    "name": "Paneer Butter Masala",
+    "cost": 120,
+    "description": "Paneer cubes in a creamy tomato-based gravy.",
+    "id": 301
+  },
+  {
+    "name": "Paneer Bhurji",
+    "cost": 130,
+    "description": "Scrambled paneer cooked with spices and vegetables.",
+    "id": 302
+  },
+  {
+    "name": "Palak Paneer",
+    "cost": 110,
+    "description": "Paneer cooked with spinach and spices.",
+    "id": 303
+  },
+  {
+    "name": "Kadai Paneer",
+    "cost": 130,
+    "description": "Paneer cooked in a spicy, tangy sauce with bell peppers.",
+    "id": 304
+  },
+  {
+    "name": "Shahi Paneer",
+    "cost": 120,
+    "description": "Rich, creamy paneer dish with nuts and spices.",
+    "id": 305
+  },
+  {
+    "name": "Mutter Paneer",
+    "cost": 110,
+    "description": "Paneer and peas in a spiced tomato gravy.",
+    "id": 306
+  },
+  {
+    "name": "Butter Dal Fry",
+    "cost": 90,
+    "description": "Dal cooked with butter and spices.",
+    "id": 401
+  },
+  {
+    "name": "Dal Fry",
+    "cost": 80,
+    "description": "Simple, spiced lentil dish.",
+    "id": 402
+  },
+  {
+    "name": "Dal Makhani",
+    "cost": 110,
+    "description": "Rich, creamy black lentils cooked with butter and cream.",
+    "id": 403
+  },
+  {
+    "name": "Dal Palak",
+    "cost": 80,
+    "description": "Lentils cooked with spinach.",
+    "id": 404
+  },
+  {
+    "name": "Dal Gujarati",
+    "cost": 70,
+    "description": "Sweet and spicy lentil curry typical of Gujarat.",
+    "id": 405
+  },
+  {
+    "name": "Vandana Special Kaju Curry",
+    "cost": 140,
+    "description": "Cashew curry in a rich, creamy sauce.",
+    "id": 501
+  },
+  {
+    "name": "Dum Aloo",
+    "cost": 130,
+    "description": "Potatoes cooked in a spiced, rich gravy.",
+    "id": 502
+  },
+  {
+    "name": "Chhola Masala",
+    "cost": 110,
+    "description": "Spiced chickpeas curry.",
+    "id": 503
+  },
+  {
+    "name": "Green Peas Masala",
+    "cost": 115,
+    "description": "Green peas cooked in a spicy, savory sauce.",
+    "id": 504
+  },
+  {
+    "name": "Malai Methi Mutter",
+    "cost": 120,
+    "description": "Creamy fenugreek and peas curry.",
+    "id": 505
+  },
+  {
+    "name": "Bhindi Masala",
+    "cost": 85,
+    "description": "Spiced okra stir-fry.",
+    "id": 506
+  },
+  {
+    "name": "Aloo Mutter",
+    "cost": 80,
+    "description": "Potatoes and peas in a spiced gravy.",
+    "id": 507
+  },
+  {
+    "name": "Sangam (Mix Veg.)",
+    "cost": 110,
+    "description": "Mixed vegetable curry.",
+    "id": 601
+  },
+  {
+    "name": "Veg Jaipuri",
+    "cost": 120,
+    "description": "Mixed vegetables cooked in a spicy Jaipuri style.",
+    "id": 602
+  },
+  {
+    "name": "Veg Kolapuri",
+    "cost": 120,
+    "description": "A spicy mixed vegetable dish from Kolhapur.",
+    "id": 603
+  },
+  {
+    "name": "Malai Kofta",
+    "cost": 110,
+    "description": "Fried dumplings in a rich, creamy sauce.",
+    "id": 604
+  },
+  {
+    "name": "Kadai Kofta",
+    "cost": 120,
+    "description": "Fried dumplings in a spicy Kadai gravy.",
+    "id": 605
+  },
+  {
+    "name": "Khichdi",
+    "cost": 50,
+    "description": "A simple, savory rice and lentil dish.",
+    "id": 701
+  },
+  {
+    "name": "Masala Khichdi",
+    "cost": 60,
+    "description": "Khichdi cooked with a blend of spices.",
+    "id": 702
+  },
+  {
+    "name": "Masala Khichdi (Dinner)",
+    "cost": 70,
+    "description": "A hearty khichdi, perfect for dinner.",
+    "id": 703
+  },
+  {
+    "name": "Sev Tomato",
+    "cost": 80,
+    "description": "A flavorful tomato-based vegetable dish.",
+    "id": 704
+  },
+  {
+    "name": "Batana Bataka",
+    "cost": 80,
+    "description": "Spiced potatoes cooked to perfection.",
+    "id": 705
+  },
+  {
+    "name": "Bataka Tomato",
+    "cost": 70,
+    "description": "Tomatoes cooked with aromatic spices.",
+    "id": 706
+  },
+  {
+    "name": "Bengan Ka Bhurta",
+    "cost": 80,
+    "description": "Eggplant mashed and seasoned with spices.",
+    "id": 707
+  },
+  {
+    "name": "Flowler Mutter",
+    "cost": 80,
+    "description": "Green peas cooked in a savory sauce.",
+    "id": 708
+  },
+  {
+    "name": "Kobij Mutter",
+    "cost": 80,
+    "description": "Cabbage and peas stir-fried with spices.",
+    "id": 709
+  },
+  {
+    "name": "Palak Tomato",
+    "cost": 70,
+    "description": "Spinach and tomato curry.",
+    "id": 710
+  },
+  {
+    "name": "Aloo Palak",
+    "cost": 60,
+    "description": "Potatoes and spinach cooked together.",
+    "id": 711
+  },
+  {
+    "name": "Gujarati Dal",
+    "cost": 70,
+    "description": "Sweet and spicy lentil soup.",
+    "id": 712
+  },
+  {
+    "name": "Bataka Ni Sukhi Bhaji",
+    "cost": 60,
+    "description": "Dry, spiced potato dish.",
+    "id": 713
+  },
+  {
+    "name": "Plain Chapati",
+    "cost": 10,
+    "description": "Unleavened flatbread.",
+    "id": 801
+  },
+  {
+    "name": "Butter Chapati",
+    "cost": 15,
+    "description": "Chapati with a layer of butter.",
+    "id": 802
+  },
+  {
+    "name": "Plain Paratha",
+    "cost": 25,
+    "description": "Flaky, layered flatbread.",
+    "id": 803
+  },
+  {
+    "name": "Butter Paratha",
+    "cost": 35,
+    "description": "Paratha cooked with butter.",
+    "id": 804
+  },
+  {
+    "name": "Bhakhri",
+    "cost": 20,
+    "description": "Crispy, thick flatbread.",
+    "id": 805
+  },
+  {
+    "name": "Bajri Na Rotla",
+    "cost": 25,
+    "description": "Millet flatbread.",
+    "id": 806
+  },
+  {
+    "name": "Puri (1 Pic)",
+    "cost": 10,
+    "description": "Deep-fried bread, served in individual pieces.",
+    "id": 807
+  },
+  {
+    "name": "Plain Rice",
+    "cost": 15,
+    "description": "Steamed white rice.",
+    "id": 901
+  },
+  {
+    "name": "Jeera Rice",
+    "cost": 25,
+    "description": "Rice flavored with cumin seeds.",
+    "id": 902
+  },
+  {
+    "name": "Veg Pulav",
+    "cost": 35,
+    "description": "Rice cooked with mixed vegetables.",
+    "id": 903
+  },
+  {
+    "name": "Veg Biryani",
+    "cost": 40,
+    "description": "Spiced rice dish with vegetables.",
+    "id": 904
+  },
+  {
+    "name": "Gulab Jamun (4 pieces)",
+    "cost": 40,
+    "description": "Sweet, deep-fried milk balls soaked in syrup.",
+    "id": 10001
+  },
+  {
+    "name": "Rasgulla (4 pieces)",
+    "cost": 40,
+    "description": "Sweet, spongy cheese balls in syrup.",
+    "id": 10002
+  },
+  {
+    "name": "Shrikhand",
+    "cost": 40,
+    "description": "Sweetened yogurt dessert flavored with cardamom.",
+    "id": 10003
+  },
+  {
+    "name": "Aam Ras (Seasonal)",
+    "cost": 35,
+    "description": "Seasonal mango puree.",
+    "id": 10004
+  },
+  {
+    "name": "Veg Raita",
+    "cost": 50,
+    "description": "Yogurt mixed with chopped vegetables.",
+    "id": 11001
+  },
+  {
+    "name": "Onion Raita",
+    "cost": 50,
+    "description": "Yogurt mixed with finely chopped onions.",
+    "id": 11002
+  },
+  {
+    "name": "Boondi Raita",
+    "cost": 50,
+    "description": "Yogurt mixed with crispy chickpea flour balls.",
+    "id": 11003
+  },
+  {
+    "name": "Buttermilk",
+    "cost": 25,
+    "description": "A refreshing drink made from yogurt.",
+    "id": 11004
+  },
+  {
+    "name": "Dahi",
+    "cost": 35,
+    "description": "Plain yogurt.",
+    "id": 11005
+  },
+  {
+    "name": "Lassi (Sweet/Salted)",
+    "cost": 50,
+    "description": "Yogurt-based drink, available sweet or salted.",
+    "id": 11006
+  },
+  {
+    "name": "Special Dahiwada",
+    "cost": 50,
+    "description": "Deep-fried lentil dumplings soaked in yogurt.",
+    "id": 11007
+  },
+  {
+    "name": "Veg. Coatless (3 Pic.)",
+    "cost": 80,
+    "description": "Vegetable cutlets served without coating.",
+    "id": 12001
+  },
+  {
+    "name": "Aloo Paratha",
+    "cost": 35,
+    "description": "Flatbread stuffed with spiced potatoes.",
+    "id": 12002
+  },
+  {
+    "name": "Puri Bhaji (3 Puri)",
+    "cost": 80,
+    "description": "Deep-fried bread served with spiced potatoes.",
+    "id": 12003
+  },
+  {
+    "name": "Finger Chips",
+    "cost": 70,
+    "description": "Crispy potato finger fries.",
+    "id": 12004
+  },
+  {
+    "name": "Bread Butter",
+    "cost": 25,
+    "description": "Bread slices toasted with butter.",
+    "id": 12005
+  },
+  {
+    "name": "Veg. Sandwich",
+    "cost": 40,
+    "description": "Sandwich filled with fresh vegetables.",
+    "id": 12006
+  },
+  {
+    "name": "Bataka Poha",
+    "cost": 30,
+    "description": "Flattened rice cooked with spiced potatoes.",
+    "id": 12007
+  },
+  {
+    "name": "Muli Paratha (Seasonal)",
+    "cost": 40,
+    "description": "Flatbread stuffed with radish, available seasonally.",
+    "id": 12008
+  },
+  {
+    "name": "Gobhi Paratha (Seasonal)",
+    "cost": 40,
+    "description": "Flatbread stuffed with spiced cauliflower, available seasonally.",
+    "id": 12009
+  }
+]
