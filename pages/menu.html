@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicone -->
+    <link rel="icon" href="/images/stc_logo.jpg" />
     <title>Food Menu</title>
     <link rel="stylesheet" href="/css/menu.css" />
     <link rel="stylesheet" href="/css/navbar.css" />
@@ -14,47 +16,93 @@
     />
   </head>
   <body>
-    <nav class="navbar">
-      <div class="navbar-title">
-        Vandana the family dining hall & restaurant
+    <!-- MAIN -->
+    <img
+      src="/images/banner.png"
+      alt=""
+      width="100%"
+      height=""
+      style="object-fit: cover"
+    />
+    <div class="user-action">
+      <div>
+        <!-- <h2>Sort by Price</h2> -->
+        <select id="priceSort">
+          <option value="">Sort</option>
+          <option value="low">Low to High</option>
+          <option value="high">High to Low</option>
+        </select>
       </div>
-      <ul class="navbar-links">
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="./cart.html">Cart</a></li>
-        <li><a href="#account">Account</a></li>
-      </ul>
-    </nav>
-    <button type="submit">
-      <span class="fa fa-envelope"></span> Email Us!
-    </button>
-    <span class="fa fa-bars"></span>
-    <h2 class="advice">Select any item to add cart</h2>
+      <div>
+        <input type="text" class="searchbar" placeholder="Search for food" />
+      </div>
+    </div>
     <div class="main">
-      <div class="left-panel">
-        <h2>Filter By Choice</h2>
+      <!-- left -->
+      <!-- <div class="left-panel">
         <div>
+          <h2>Filter By Choice</h2>
           <label><input type="radio" name="choice" data-id="a" />Salad</label>
           <label><input type="radio" name="choice" data-id="2" />Papad</label>
-          <label><input type="radio" name="choice" data-id="3" />Paneer Ka Swad</label>
-          <label><input type="radio" name="choice" data-id="4" />Daal ka Tadka</label>
-          <label><input type="radio" name="choice" data-id="5" />Sabzio Ka Khazana</label>
-          <label><input type="radio" name="choice" data-id="6" />Veg. & Kofta</label>
-          <label><input type="radio" name="choice" data-id="7" />Gujrati Menu</label>
-          <label><input type="radio" name="choice" data-id="8" />Garma Garam Tawe Se</label>
-          <label><input type="radio" name="choice" data-id="9" />Basmati Ki Bahar</label>
-          <label><input type="radio" name="choice" data-id="10" />Meethe Manuhar</label>
-          <label><input type="radio" name="choice" data-id="11" />Dahi & Raita</label>
-          <label><input type="radio" name="choice" data-id="12" />little To Much</label>
-          <h2>Sort by Price</h2>
-          <select id="priceSort">
-            <option value="">None</option>
-            <option value="low">Low to High</option>
-            <option value="high">High to Low</option>
-          </select>
+          <label
+            ><input type="radio" name="choice" data-id="3" />Paneer Ka
+            Swad</label
+          >
+          <label
+            ><input type="radio" name="choice" data-id="4" />Daal ka
+            Tadka</label
+          >
+          <label
+            ><input type="radio" name="choice" data-id="5" />Sabzio Ka
+            Khazana</label
+          >
+          <label
+            ><input type="radio" name="choice" data-id="6" />Veg. & Kofta</label
+          >
+          <label
+            ><input type="radio" name="choice" data-id="7" />Gujrati Menu</label
+          >
+          <label
+            ><input type="radio" name="choice" data-id="8" />Garma Garam Tawe
+            Se</label
+          >
+          <label
+            ><input type="radio" name="choice" data-id="9" />Basmati Ki
+            Bahar</label
+          >
+          <label
+            ><input type="radio" name="choice" data-id="10" />Meethe
+            Manuhar</label
+          >
+          <label
+            ><input type="radio" name="choice" data-id="11" />Dahi &
+            Raita</label
+          >
+          <label
+            ><input type="radio" name="choice" data-id="12" />little To
+            Much</label
+          >
         </div>
-      </div>
+      </div> -->
 
       <div class="menu-container"></div>
+
+      <!-- BOTTOM NAVIGATION -->
+      <button class="show-menu">MENU</button>
+      <div class="bottom-nav">
+        <a href="/index.html">
+          <i class="fas fa-home"></i>
+          <span>Home</span>
+        </a>
+        <a href="#profile">
+          <i class="fas fa-user"></i>
+          <span>My Profile</span>
+        </a>
+        <a href="#cart">
+          <i class="fas fa-shopping-cart"></i>
+          <span>Cart</span>
+        </a>
+      </div>
     </div>
     <script type="module" src="../script/store.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
