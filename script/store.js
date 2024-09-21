@@ -34,21 +34,26 @@ function displayData(data) {
     foodItem.classList = "food-item";
 
     foodItem.innerHTML = `
+      <div class="left">
       <img src="${element.image}" alt="${element.name}" width="300" height="200" />
-      <h3>${element.name}</h3>
-      <p>${element.description}</p>
-      <div class="price">Rs.${element.cost}</div> <br>
+      </div>
+      <div class="right">
+        <h3><span class="fas fa-seedling"> ${element.name}</h3>
+        <p>${element.description}</p> 
+        <div>
+          <div class="price"><strong>₹${element.cost}<strong></div> <br>
+          <button class="cart-btn fas fa-shopping-cart"> Add</button>
+        </div>
+      </div>
       <br>
     `;
-    let button = document.createElement("button");
-    button.classList = "cart-btn";
-    button.textContent = "Add To Plate";
-    foodItem.append(button);
+    menu.append(foodItem);
 
+    let button = foodItem.querySelector(".cart-btn");
     button.addEventListener("click", () => {
+      console.log(element)
       cart(element);
     });
-    menu.append(foodItem);
   });
 }
 
@@ -58,7 +63,7 @@ function cart(data) {
   localStorage.setItem("cart", JSON.stringify(arrOfitems));
   tostTopEnd.fire({
     icon: "success",
-    title: "Added to wishlist",
+    title: "Added to Bag",
   });
 }
 
@@ -74,8 +79,10 @@ radioButtons.forEach((radio) => {
 
 function filtered(id) {
   const idStr = String(id);
-  let filteredData = fooditems.filter(item => String(item.id).startsWith(idStr));
-  console.log(filteredData)
+  let filteredData = fooditems.filter((item) =>
+    String(item.id).startsWith(idStr)
+  );
+  console.log(filteredData);
   displayData(filteredData);
 }
 
@@ -83,7 +90,7 @@ let priceSort = document.getElementById("priceSort");
 priceSort.addEventListener("change", () => {
   sortOrder = priceSort.value;
   if (!fooditems) return; // Ensure fooditems is defined
-  
+
   let filteredData = [...fooditems];
 
   if (sortOrder === "low") {
@@ -94,3 +101,5 @@ priceSort.addEventListener("change", () => {
 
   displayData(filteredData);
 });
+
+// alert(screen.width)
