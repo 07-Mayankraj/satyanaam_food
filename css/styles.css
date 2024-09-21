@@ -92,12 +92,12 @@ p {
 }
 
 .menupage a {
-    border: 1px solid black;
+  border: 1px solid black;
   background-color: #3498db00;
 }
 
 .menupage a:hover {
-    color: #c06014;
+  color: #c06014;
   background-color: rgb(236, 236, 236);
   transform: scale(1.05);
 }
@@ -209,6 +209,19 @@ button.menupage {
   margin: 20px 10px;
 }
 
+
+
+/* changes */
+.overview {
+  z-index: 100;
+  width: 100%;
+  background-color: white;
+  
+}
+.overview>h1{
+  color: #c06014;
+}
+
 /* media quary */
 
 @media (max-width: 1028px) {
@@ -216,7 +229,9 @@ button.menupage {
     text-align: center;
   }
   .iphone {
+    display: none;
     position: static;
     transform: rotate(0);
   }
+
 }
