@@ -2,205 +2,239 @@
   {
     "name": "Green Salad",
     "cost": 40,
-    "description": "A fresh mix of green vegetables.",
+    "description": "A fresh mix of green\nvegetables.",
+    "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/ff0whb6aphp3evdu3txa",
     "id": "a01"
   },
   {
     "name": "Kakdi Salad",
     "cost": 35,
     "description": "Refreshing cucumber salad.",
+    "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/ff0whb6aphp3evdu3txa",
     "id": "a02"
   },
   {
     "name": "Tomato Salad",
     "cost": 40,
     "description": "Simple salad made with fresh tomatoes.",
+    "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/ff0whb6aphp3evdu3txa",
     "id": "a03"
   },
   {
     "name": "Kachumber Salad",
     "cost": 40,
     "description": "A mix of diced vegetables with a tangy dressing.",
+    "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/ff0whb6aphp3evdu3txa",
     "id": "a04"
   },
   {
     "name": "Roasted Papad",
     "cost": 15,
-    "description": "Crispy, roasted papadum.",
+    "description": "Crispy, roasted papad.",
+    "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/g0dj51me7qp1t4yy2fnz",
     "id": 201
   },
   {
     "name": "Fry Papad",
     "cost": 18,
-    "description": "Deep-fried papadum.",
+    "description": "Deep-fried papad.",
+    "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/g0dj51me7qp1t4yy2fnz",
     "id": 202
   },
   {
     "name": "Roasted Masala Papad",
     "cost": 20,
-    "description": "Papadum topped with roasted spices.",
+    "description": "Papad topped with roasted spices.",
+    "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/g0dj51me7qp1t4yy2fnz",
     "id": 203
   },
   {
     "name": "Fry Masala Papad",
     "cost": 25,
-    "description": "Deep-fried papadum with masala seasoning.",
+    "description": "Deep-fried papad with masala seasoning.",
+    "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/g0dj51me7qp1t4yy2fnz",
     "id": 204
   },
   {
     "name": "Paneer Butter Masala",
     "cost": 120,
     "description": "Paneer cubes in a creamy tomato-based gravy.",
+    "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/yg2dl0p5juwn2r9et4lj",
     "id": 301
   },
   {
     "name": "Paneer Bhurji",
     "cost": 130,
     "description": "Scrambled paneer cooked with spices and vegetables.",
+    "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/yg2dl0p5juwn2r9et4lj",
     "id": 302
   },
   {
     "name": "Palak Paneer",
     "cost": 110,
     "description": "Paneer cooked with spinach and spices.",
+    "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/yg2dl0p5juwn2r9et4lj",
     "id": 303
   },
   {
     "name": "Kadai Paneer",
     "cost": 130,
     "description": "Paneer cooked in a spicy, tangy sauce with bell peppers.",
+    "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/yg2dl0p5juwn2r9et4lj",
     "id": 304
   },
   {
     "name": "Shahi Paneer",
     "cost": 120,
     "description": "Rich, creamy paneer dish with nuts and spices.",
+    "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/yg2dl0p5juwn2r9et4lj",
     "id": 305
   },
   {
     "name": "Mutter Paneer",
     "cost": 110,
     "description": "Paneer and peas in a spiced tomato gravy.",
+    "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/yg2dl0p5juwn2r9et4lj",
     "id": 306
   },
   {
     "name": "Butter Dal Fry",
     "cost": 90,
     "description": "Dal cooked with butter and spices.",
+    "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/yo4rp9kupkqxilihdfvo",
     "id": 401
   },
   {
     "name": "Dal Fry",
     "cost": 80,
     "description": "Simple, spiced lentil dish.",
+    "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/yo4rp9kupkqxilihdfvo",
     "id": 402
   },
   {
     "name": "Dal Makhani",
     "cost": 110,
     "description": "Rich, creamy black lentils cooked with butter and cream.",
+    "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/yo4rp9kupkqxilihdfvo",
     "id": 403
   },
   {
     "name": "Dal Palak",
     "cost": 80,
     "description": "Lentils cooked with spinach.",
+    "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/yo4rp9kupkqxilihdfvo",
     "id": 404
   },
   {
     "name": "Dal Gujarati",
     "cost": 70,
     "description": "Sweet and spicy lentil curry typical of Gujarat.",
+    "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/yo4rp9kupkqxilihdfvo",
     "id": 405
   },
   {
     "name": "Vandana Special Kaju Curry",
     "cost": 140,
     "description": "Cashew curry in a rich, creamy sauce.",
+    "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/uijxhznei92sllvi4kad",
     "id": 501
   },
   {
     "name": "Dum Aloo",
     "cost": 130,
     "description": "Potatoes cooked in a spiced, rich gravy.",
+    "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/uijxhznei92sllvi4kad",
     "id": 502
   },
   {
     "name": "Chhola Masala",
     "cost": 110,
     "description": "Spiced chickpeas curry.",
+    "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/uijxhznei92sllvi4kad",
     "id": 503
   },
   {
     "name": "Green Peas Masala",
     "cost": 115,
     "description": "Green peas cooked in a spicy, savory sauce.",
+    "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/uijxhznei92sllvi4kad",
     "id": 504
   },
   {
     "name": "Malai Methi Mutter",
     "cost": 120,
     "description": "Creamy fenugreek and peas curry.",
+    "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/uijxhznei92sllvi4kad",
     "id": 505
   },
   {
     "name": "Bhindi Masala",
     "cost": 85,
     "description": "Spiced okra stir-fry.",
+    "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/uijxhznei92sllvi4kad",
     "id": 506
   },
   {
     "name": "Aloo Mutter",
     "cost": 80,
     "description": "Potatoes and peas in a spiced gravy.",
+    "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/uijxhznei92sllvi4kad",
     "id": 507
   },
   {
     "name": "Sangam (Mix Veg.)",
     "cost": 110,
     "description": "Mixed vegetable curry.",
+    "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/jcjomtjbsa95qjbekjho",
     "id": 601
   },
   {
     "name": "Veg Jaipuri",
     "cost": 120,
     "description": "Mixed vegetables cooked in a spicy Jaipuri style.",
+    "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/jcjomtjbsa95qjbekjho",
     "id": 602
   },
   {
     "name": "Veg Kolapuri",
     "cost": 120,
     "description": "A spicy mixed vegetable dish from Kolhapur.",
+    "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/jcjomtjbsa95qjbekjho",
     "id": 603
   },
   {
     "name": "Malai Kofta",
     "cost": 110,
     "description": "Fried dumplings in a rich, creamy sauce.",
+    "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/jcjomtjbsa95qjbekjho",
     "id": 604
   },
   {
     "name": "Kadai Kofta",
     "cost": 120,
     "description": "Fried dumplings in a spicy Kadai gravy.",
+    "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/jcjomtjbsa95qjbekjho",
     "id": 605
   },
   {
     "name": "Khichdi",
     "cost": 50,
     "description": "A simple, savory rice and lentil dish.",
+    "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/exb01vclbkj51mjmhcqg",
     "id": 701
   },
   {
     "name": "Masala Khichdi",
     "cost": 60,
     "description": "Khichdi cooked with a blend of spices.",
+    "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/exb01vclbkj51mjmhcqg",
     "id": 702
   },
   {
     "name": "Masala Khichdi (Dinner)",
     "cost": 70,
     "description": "A hearty khichdi, perfect for dinner.",
+    "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/exb01vclbkj51mjmhcqg",
     "id": 703
   },
   {
