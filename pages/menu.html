@@ -15,80 +15,70 @@
       crossorigin="anonymous"
     />
   </head>
+
   <body>
     <!-- MAIN -->
     <img
       src="/images/banner.png"
       alt=""
       width="100%"
-      height=""
+      height="200px"
       style="object-fit: cover"
     />
-    <div class="user-action">
-      <div>
+    <div class="user-parent">
+      <div class="user-action">
         <!-- <h2>Sort by Price</h2> -->
         <select id="priceSort">
           <option value="">Sort</option>
-          <option value="low">Low to High</option>
-          <option value="high">High to Low</option>
+          <option value="low">Low</option>
+          <option value="high">High</option>
         </select>
-      </div>
-      <div>
         <input type="text" class="searchbar" placeholder="Search for food" />
       </div>
     </div>
     <div class="main">
       <!-- left -->
-      <!-- <div class="left-panel">
+      <div class="left-panel">
         <div>
           <h2>Filter By Choice</h2>
-          <label><input type="radio" name="choice" data-id="a" />Salad</label>
-          <label><input type="radio" name="choice" data-id="2" />Papad</label>
-          <label
-            ><input type="radio" name="choice" data-id="3" />Paneer Ka
-            Swad</label
-          >
-          <label
-            ><input type="radio" name="choice" data-id="4" />Daal ka
-            Tadka</label
-          >
-          <label
-            ><input type="radio" name="choice" data-id="5" />Sabzio Ka
-            Khazana</label
-          >
-          <label
-            ><input type="radio" name="choice" data-id="6" />Veg. & Kofta</label
-          >
-          <label
-            ><input type="radio" name="choice" data-id="7" />Gujrati Menu</label
-          >
-          <label
-            ><input type="radio" name="choice" data-id="8" />Garma Garam Tawe
-            Se</label
-          >
-          <label
-            ><input type="radio" name="choice" data-id="9" />Basmati Ki
-            Bahar</label
-          >
-          <label
-            ><input type="radio" name="choice" data-id="10" />Meethe
-            Manuhar</label
-          >
-          <label
-            ><input type="radio" name="choice" data-id="11" />Dahi &
-            Raita</label
-          >
-          <label
-            ><input type="radio" name="choice" data-id="12" />little To
-            Much</label
-          >
+          <label class="radioo" data-id="">All</label>
+          <label class="radioo" data-id="a">Salad</label>
+          <label class="radioo" data-id="2">Papad</label>
+          <label class="radioo" data-id="3">Paneer Ka Swad</label>
+          <label class="radioo" data-id="4">Daal ka Tadka</label>
+          <label class="radioo" data-id="5">Sabzio Ka Khazana</label>
+          <label class="radioo" data-id="6">Veg. & Kofta</label>
+          <label class="radioo" data-id="7">Gujrati Menu</label>
+          <label class="radioo" data-id="8">Garma Garam Tawe Se</label>
+          <label class="radioo" data-id="9">Basmati Ki Bahar</label>
+          <label class="radioo" data-id="10">Meethe Manuhar</label>
+          <label class="radioo" data-id="11">Dahi & Raita</label>
+          <label class="radioo" data-id="12">little To Much</label>
         </div>
-      </div> -->
+      </div>
 
       <div class="menu-container"></div>
 
       <!-- BOTTOM NAVIGATION -->
-      <button class="show-menu">MENU</button>
+      <div class="popup-menu">
+        <h2>Filter By Choice</h2>
+        <label class="radioo" data-id="">All</label>
+        <label class="radioo" data-id="a">Salad</label>
+        <label class="radioo" data-id="2">Papad</label>
+        <label class="radioo" data-id="3">Paneer Ka Swad</label>
+        <label class="radioo" data-id="4">Daal ka Tadka</label>
+        <label class="radioo" data-id="5">Sabzio Ka Khazana</label>
+        <label class="radioo" data-id="6">Veg. & Kofta</label>
+        <label class="radioo" data-id="7">Gujrati Menu</label>
+        <label class="radioo" data-id="8">Garma Garam Tawe Se</label>
+        <label class="radioo" data-id="9">Basmati Ki Bahar</label>
+        <label class="radioo" data-id="10">Meethe Manuhar</label>
+        <label class="radioo" data-id="11">Dahi & Raita</label>
+        <label class="radioo" data-id="12">little To Much</label>
+      </div>
+      <button class="show-menu">
+        <span class="fa fa-utensils" style="font-size: 25px"></span>
+      </button>
       <div class="bottom-nav">
         <a href="/index.html">
           <i class="fas fa-home"></i>
