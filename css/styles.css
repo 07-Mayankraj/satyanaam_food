@@ -23,13 +23,14 @@ p {
   font-size: 3rem;
   line-height: 1.5;
   font-weight: 900;
+  margin:  10px;
   color: #fff;
 }
 
 /* contianers */
 
 .container-fluid {
-  padding: 7% 15%;
+  padding: 0 15%;
 }
 
 /* nav-bar */
@@ -40,7 +41,7 @@ p {
 
 .navbar-brand {
   font-family: "Ubuntu", sans-serif;
-  font-size: 2rem;
+  font-size: 4rem;
   font-weight: bold;
 }
 
@@ -65,7 +66,7 @@ p {
 }
 
 #title .container-fluid {
-  padding: 3% 15% 7%;
+  padding: 3% 15%;
 }
 
 .whatsapp a,
@@ -166,7 +167,7 @@ button.menupage {
 /* pricing section */
 
 #pricing {
-  padding: 100px;
+  padding: 20px 300px;
 }
 
 .full_meal {
@@ -179,7 +180,7 @@ button.menupage {
 }
 
 .pricing-column {
-  padding: 3% 0%;
+  padding: 0%;
 }
 
 .price-text {
@@ -209,29 +210,102 @@ button.menupage {
   margin: 20px 10px;
 }
 
-
-
 /* changes */
 .overview {
   z-index: 100;
   width: 100%;
   background-color: white;
-  
 }
-.overview>h1{
+.overview > h1 {
   color: #c06014;
 }
 
 /* media quary */
-
 @media (max-width: 1028px) {
+  #title .container-fluid {
+    padding: 20px;
+  }
+  .container-fluid {
+    padding: 0 20px;
+  }
+  .navbar {
+    padding: 0;
+  }
+  .navbar-brand {
+    width: auto;
+    flex-wrap: wrap;
+    font-size: 5rem;
+  }
+  .navbar-toggler-icon {
+    font-size: 50px;
+  }
+  .nav-link {
+    font-size: 2.5em;
+  }
   #title {
     text-align: center;
   }
-  .iphone {
+
+ #title .col-lg-6 {
+    margin-top: 10px;
+    text-align: left;
+  }
+  .whatsapp a,
+  .menupage a,
+  #cta a {
+    margin: 0;
+    margin-left: 10px;
+    font-size: 30px;
+    padding: 30px 40px;
+    /* border: 2px solid black; */
+    border-radius: 50px;
+  }
+
+  /* .iphone {
     display: none;
     position: static;
     transform: rotate(0);
+  } */
+  #features .container-fluid .row {
+    font-size: 20px;
+    padding: 0;
+    /* background-color: #11a146; */
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    /* width: 400px; */
+    flex-direction: row;
   }
 
+  .carousel-item-next,
+  .carousel-item-prev,
+  .carousel-item.active {
+    padding: 0;
+  }
+  .btn,
+  #features .container-fluid .row p,
+  .navbar-nav .ml-auto {
+    font-size: 1.5em;
+  }
+  #pricing {
+    font-size: 30px;
+    padding: 5%;
+  }
+  #pricing button {
+    font-size: 70px;
+  }
+  #footer .container-fluid {
+    font-size: 2em;
+    padding: 0;
+  }
+}
+
+@media (max-width: 320px) {
+  #title {
+    text-align: center;
+  }
+}
+
+#footer .container-fluid {
+  padding: 0 15%;
 }
