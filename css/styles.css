@@ -18,25 +18,22 @@ p {
   color: #3b3b3b;
 }
 
-/* headingggggggggg */
-
+/* Big Heading */
 .big-heading {
-  font-family: "Montserrat, sans-serif";
+  font-family: "Montserrat", sans-serif;
   font-size: 3rem;
   line-height: 1.5;
   font-weight: 900;
-  margin:  10px;
+  margin: 10px;
   color: #fff;
 }
 
-/* contianers */
-
+/* Containers */
 .container-fluid {
   padding: 0 15%;
 }
 
-/* nav-bar */
-
+/* Navbar */
 .navbar {
   padding: 0 0 4.5rem;
 }
@@ -60,8 +57,7 @@ p {
   margin: 5% 3% 5% 0;
 }
 
-/* titlesection */
-
+/* Title Section */
 #title {
   background-color: #c06014;
   text-align: left;
@@ -71,6 +67,7 @@ p {
   padding: 3% 15%;
 }
 
+/* Links */
 .whatsapp a,
 .menupage a {
   display: inline-block;
@@ -83,14 +80,11 @@ p {
   font-size: 16px;
   margin: 10px;
   transition: background-color 0.3s ease, transform 0.3s ease;
-  border: none;
-  box-shadow: none;
 }
 
 .whatsapp a:hover {
   color: #11a146;
   background-color: rgb(236, 236, 236);
-
   transform: scale(1.05);
 }
 
@@ -105,11 +99,7 @@ p {
   transform: scale(1.05);
 }
 
-.whatsapp a span,
-.menupage a span {
-  margin-right: 5px;
-}
-
+/* Button Styling */
 button.whatsapp,
 button.menupage {
   margin: 0;
@@ -119,16 +109,7 @@ button.menupage {
   outline: none;
 }
 
-.iphone {
-  /* margin: 30px auto auto 40px; */
-  transform: rotate(25deg);
-  width: 60%;
-  position: absolute;
-  right: 30%;
-}
-
-/* features section */
-
+/* Features Section */
 #features {
   background-color: white;
   position: relative;
@@ -139,9 +120,20 @@ button.menupage {
   font-size: 1.5rem;
   font-weight: bold;
 }
-
+.navbar-toggler-icon {
+  display: inline-block;
+  width: 3.5em;
+  height: 3.5em;
+  vertical-align: middle;
+  content: "";
+  background: no-repeat center center;
+  background-size: 100% 100%;
+  font-size: 20px;
+  outline: none;
+}
 .feature-box {
   padding: 5%;
+  text-align: left;
 }
 
 .icon {
@@ -153,11 +145,9 @@ button.menupage {
   color: #131213;
 }
 
-/* food items  carousel part*/
-
+/* Food Items Carousel */
 #food_items {
   background-color: #c06014;
-  /* color: #461111; */
 }
 
 .items-profile {
@@ -166,10 +156,9 @@ button.menupage {
   border-radius: 100%;
 }
 
-/* pricing section */
-
+/* Pricing Section */
 #pricing {
-  padding: 20px 300px;
+  padding: 20px 0px;
 }
 
 .full_meal {
@@ -191,8 +180,7 @@ button.menupage {
   font-weight: bold;
 }
 
-/* cta */
-
+/* Call to Action */
 #cta {
   background-color: #c06014;
   color: white;
@@ -202,8 +190,7 @@ button.menupage {
   padding: 3%;
 }
 
-/* foooter */
-
+/* Footer */
 #footer {
   font-size: 1.5rem;
 }
@@ -212,18 +199,19 @@ button.menupage {
   margin: 20px 10px;
 }
 
-/* changes */
+/* Overview Section */
 .overview {
   z-index: 100;
   width: 100%;
   background-color: white;
 }
+
 .overview > h1 {
   color: #c06014;
 }
 
-/* media quary */
-@media (max-width: 1028px) {
+/* Media Queries */
+@media (max-width: 1023px) {
   #title .container-fluid {
     padding: 20px;
   }
@@ -238,19 +226,14 @@ button.menupage {
     flex-wrap: wrap;
     font-size: 5rem;
   }
-  .navbar-toggler-icon {
-    font-size: 50px;
-  }
   .nav-link {
     font-size: 2.5em;
   }
+  .button-div {
+    display: flex;
+  }
   #title {
     text-align: center;
-  }
-
- #title .col-lg-6 {
-    margin-top: 10px;
-    text-align: left;
   }
   .whatsapp a,
   .menupage a,
@@ -259,30 +242,15 @@ button.menupage {
     margin-left: 10px;
     font-size: 30px;
     padding: 30px 40px;
-    /* border: 2px solid black; */
     border-radius: 50px;
   }
-
-  /* .iphone {
-    display: none;
-    position: static;
-    transform: rotate(0);
-  } */
   #features .container-fluid .row {
     font-size: 20px;
     padding: 0;
-    /* background-color: #11a146; */
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
-    /* width: 400px; */
     flex-direction: row;
-  }
-
-  .carousel-item-next,
-  .carousel-item-prev,
-  .carousel-item.active {
-    padding: 0;
   }
   .btn,
   #features .container-fluid .row p,
@@ -292,9 +260,6 @@ button.menupage {
   #pricing {
     font-size: 30px;
     padding: 5%;
-  }
-  #pricing button {
-    font-size: 70px;
   }
   #footer .container-fluid {
     font-size: 2em;
