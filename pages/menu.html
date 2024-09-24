@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- favicone -->
-    <link rel="icon" href="/images/stc_logo.jpg" />
+    <link rel="icon" href="/images/stc_logo.png" />
     <title>Food Menu</title>
     <link rel="stylesheet" href="/css/menu.css" />
     <link rel="stylesheet" href="/css/navbar.css" />
@@ -27,15 +27,17 @@
     />
     <div class="user-parent">
       <div class="user-action">
-        <!-- <h2>Sort by Price</h2> -->
         <select id="priceSort">
-          <option value="">Sort</option>
-          <option value="low">Low</option>
-          <option value="high">High</option>
+          <option value="" class="fa-solid fa-filter">Sort</option>
+          <option value="low" class="fa-solid fa-filter">Low</option>
+          <option value="high" class="fa-solid fa-filter">High</option>
         </select>
-        <input type="text" class="searchbar" placeholder="Search for food" />
+        <div class="search-container">
+          <input type="text" class="searchbar" placeholder="Search for food" />
+        </div>
       </div>
     </div>
+
     <div class="main">
       <!-- left -->
       <div class="left-panel">
