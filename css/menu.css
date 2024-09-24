@@ -1,8 +1,13 @@
+* {
+  scrollbar-width: none;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   -webkit-tap-highlight-color: transparent;
   outline: none;
 }
+
 .main {
   display: flex;
   flex-direction: row;
@@ -115,14 +120,14 @@ body {
   font-weight: bold;
 }
 
-.fa-filter{
+.fa-filter {
   color: #007bff;
 }
 
 /* Styling for options */
 .user-action select option {
-  background-color:white; /* Background color for the options */
-  color:  #333; /* Text color for the options */
+  background-color: white; /* Background color for the options */
+  color: #333; /* Text color for the options */
 }
 
 .search-container {
