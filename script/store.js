@@ -1,8 +1,19 @@
-import { tostTopEnd } from "../utils/utils.js";
+import { tostTopEnd, showProductPopup } from "../utils/utils.js";
 
 let database = "../newdb.json";
 let fooditems;
 let sortOrder = "low";
+var tempData;
+document.querySelector(".searchbar").addEventListener("input", search);
+
+function search() {
+  let input = document.querySelector(".searchbar").value;
+  let newData = fooditems.filter((element) => {
+    return element.name.toLowerCase().includes(input.toLowerCase());
+  });
+  console.log(newData);
+  displayData(newData);
+}
 
 async function getData() {
   try {
@@ -12,7 +23,7 @@ async function getData() {
     displayData(response);
     tostTopEnd.fire({
       icon: "success",
-      title: "Food Displayed successfully",
+      title: "Food Displayed",
     });
   } catch (error) {
     Swal.fire({
@@ -28,6 +39,7 @@ getData();
 let menu = document.querySelector(".menu-container");
 
 function displayData(data) {
+  tempData = data;
   menu.innerHTML = "";
   data.forEach((element) => {
     let foodItem = document.createElement("div");
@@ -51,7 +63,7 @@ function displayData(data) {
 
     let button = foodItem.querySelector(".cart-btn");
     button.addEventListener("click", () => {
-      console.log(element)
+      console.log(element);
       cart(element);
     });
   });
@@ -68,29 +80,28 @@ function cart(data) {
 }
 
 // Select all radio buttons
-const radioButtons = document.querySelectorAll('input[type="radio"]');
+const radioButtons = document.querySelectorAll(".radioo");
 
 // Add an event listener to each radio button
 radioButtons.forEach((radio) => {
-  radio.addEventListener("change", (e) => {
+  radio.addEventListener("click", (e) => {
     filtered(e.target.dataset.id);
   });
 });
 
 function filtered(id) {
   const idStr = String(id);
-  let filteredData = fooditems.filter((item) =>
+  var filteredData = fooditems.filter((item) =>
     String(item.id).startsWith(idStr)
   );
   console.log(filteredData);
+  tempData = filteredData;
   displayData(filteredData);
 }
 
 let priceSort = document.getElementById("priceSort");
 priceSort.addEventListener("change", () => {
   sortOrder = priceSort.value;
-  if (!fooditems) return; // Ensure fooditems is defined
-
   let filteredData = [...fooditems];
 
   if (sortOrder === "low") {
@@ -102,4 +113,36 @@ priceSort.addEventListener("change", () => {
   displayData(filteredData);
 });
 
+const toggleMenu = () => {
+  const icon = document.querySelector(".fa-utensils, .fa-times");
+  const popupMenu = document.querySelector(".popup-menu");
+  const menuShowButton=document.querySelector(".show-menu")
+  if (icon.classList.contains("fa-utensils")) {
+    icon.classList = "fas fa-times close-menu";
+    popupMenu.style.display = "flex";
+    menuShowButton.style.backgroundColor="#D01818"
+  } else {
+    icon.classList = "fas fa-utensils";
+    popupMenu.style.display = "none";
+    menuShowButton.style.backgroundColor="#007bff"
+  }
+};
+
+document.querySelector(".fa-utensils").addEventListener("click", toggleMenu);
+document.querySelector(".popup-menu").addEventListener("click", toggleMenu);
+
 // alert(screen.width)
+
+// popup
+let foodItem = document.querySelectorAll(".menu-container");
+
+for (let f of foodItem) {
+  f.addEventListener("click", (e) => {
+    console.log((e.target).innerText)
+    let food = e.target.alt;
+    // console.log(tempData);
+    let clickedProduct = tempData.find((item) => item.name === food);
+    // console.log(clickedProduct);
+    showProductPopup(clickedProduct);
+  });
+}

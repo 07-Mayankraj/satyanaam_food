@@ -15,10 +15,6 @@ const tostTopEnd = Swal.mixin({
   showConfirmButton: false,
   timer: 2000,
   timerProgressBar: false,
-  didOpen: (toast) => {
-    toast.onmouseenter = Swal.stopTimer;
-    toast.onmouseleave = Swal.resumeTimer;
-  },
 });
 
 const tostBottomEnd = Swal.mixin({
@@ -27,10 +23,6 @@ const tostBottomEnd = Swal.mixin({
   showConfirmButton: false,
   timer: 3000,
   timerProgressBar: true,
-  didOpen: (toast) => {
-    toast.onmouseenter = Swal.stopTimer;
-    toast.onmouseleave = Swal.resumeTimer;
-  },
 });
 
 // authantication
@@ -51,7 +43,7 @@ function isUserLoggedin() {
       let loginLink = document.querySelector(".user");
       if (loginLink) {
         loginLink.textContent = loggedInUser;
-        loginLink.style.display="flex"
+        loginLink.style.display = "flex";
       }
     }
   });
@@ -64,4 +56,47 @@ function redirect() {
   });
 }
 
-export { tostTopEnd, tostBottomEnd, filter, isUserLoggedin, redirect };
+function showProductPopup(product) {
+  console.log(product)
+  Swal.fire({
+    html: `
+    <div class="popup-container">
+      <div class="popup-left">
+        <img src="${product.image}" alt="${product.name}">
+      </div>
+      <div class="popup-right">
+        <strong>Product:</strong> ${product.name} <br>
+        <strong>Price:</strong> Rs. ${product.cost} <br>
+        <strong>Discount:</strong> ${product.description} <br>
+        <strong>Ratings:</strong> ${product.ratingsContainer || "N/A"} ⭐ (${
+      product.ratingsCount || "No reviews"
+    })<br><br>
+        <button class="popup-btn">Add!</button>
+      </div>
+    </div>
+    `,
+    width: "auto",
+    showConfirmButton: false,
+    showCloseButton: false,
+    focusConfirm: true,
+  });
+
+  document.querySelector(".popup-btn").addEventListener("click", () => {
+    let arr = JSON.parse(localStorage.getItem("cart")) || [];
+    arr.push(product);
+    localStorage.setItem("cart", JSON.stringify(arr));
+    tostTopEnd.fire({
+      icon: "success",
+      title: "added to box",
+    });
+  });
+}
+
+export {
+  tostTopEnd,
+  tostBottomEnd,
+  filter,
+  isUserLoggedin,
+  redirect,
+  showProductPopup, 
+};
