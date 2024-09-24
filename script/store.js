@@ -4,6 +4,15 @@ let database = "../newdb.json";
 let fooditems;
 let sortOrder = "low";
 var tempData;
+
+if (window.innerWidth > 500) {
+  Swal.fire({
+    title: "Suggestion",
+    icon: "info",
+    html: `Your current screen size is ${window.innerWidth}*${window.innerHeight} but <br>This site is optimized for mobile for the best experience.`,
+  });
+}
+
 document.querySelector(".searchbar").addEventListener("input", search);
 
 function search() {
@@ -21,10 +30,6 @@ async function getData() {
     let response = await data.json();
     fooditems = response;
     displayData(response);
-    tostTopEnd.fire({
-      icon: "success",
-      title: "Food Displayed",
-    });
   } catch (error) {
     Swal.fire({
       title: "Error!",
@@ -116,29 +121,27 @@ priceSort.addEventListener("change", () => {
 const toggleMenu = () => {
   const icon = document.querySelector(".fa-utensils, .fa-times");
   const popupMenu = document.querySelector(".popup-menu");
-  const menuShowButton=document.querySelector(".show-menu")
+  const menuShowButton = document.querySelector(".show-menu");
   if (icon.classList.contains("fa-utensils")) {
     icon.classList = "fas fa-times close-menu";
     popupMenu.style.display = "flex";
-    menuShowButton.style.backgroundColor="#D01818"
+    menuShowButton.style.backgroundColor = "#D01818";
   } else {
     icon.classList = "fas fa-utensils";
     popupMenu.style.display = "none";
-    menuShowButton.style.backgroundColor="#007bff"
+    menuShowButton.style.backgroundColor = "#007bff";
   }
 };
 
 document.querySelector(".fa-utensils").addEventListener("click", toggleMenu);
 document.querySelector(".popup-menu").addEventListener("click", toggleMenu);
 
-// alert(screen.width)
-
 // popup
 let foodItem = document.querySelectorAll(".menu-container");
 
 for (let f of foodItem) {
   f.addEventListener("click", (e) => {
-    console.log((e.target).innerText)
+    console.log(e.target.innerText);
     let food = e.target.alt;
     // console.log(tempData);
     let clickedProduct = tempData.find((item) => item.name === food);
