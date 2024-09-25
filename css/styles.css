@@ -271,9 +271,52 @@ button.menupage {
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 500px) {
+  * {
+    font-size: 14px;
+  }
+  .navbar-brand {
+    width: auto;
+    flex-wrap: wrap;
+    font-size: 2.5rem;
+  }
+  .navbar-toggler-icon {
+    width: 2em;
+    height: 2em;
+  }
+  .big-heading {
+    width: auto;
+    flex-wrap: wrap;
+    font-size: 2rem;
+    margin: 0;
+  }
+  .button-div {
+    justify-content: space-between;
+    display: flex;
+}
+  #features .container-fluid .row {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  #features .container-fluid .row  div{
+    text-align: center;
+    padding: 0;
+
+  }
   #title {
     text-align: center;
+  }
+  .whatsapp a,
+  .menupage a,
+  #cta a {
+    font-size: 12px;
+    padding: 15px 25px;
+    margin: auto 4px;
+  }
+  .container-fluid i{
+    font-size: 20px;
+    margin: auto 5px;
   }
 }
 
