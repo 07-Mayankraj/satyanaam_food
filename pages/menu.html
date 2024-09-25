@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <!-- favicone -->
+    <link rel="icon" href="/images/stc_logo.png" />
+    <title>Food Menu</title>
+    <link rel="stylesheet" href="/css/menu.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <!-- MAIN -->
+    <img
+      src="/images/banner.png"
+      alt=""
+      width="100%"
+      height="200px"
+      style="object-fit: cover"
+    />
+    <div class="user-parent">
+      <div class="user-action">
+        <select id="priceSort">
+          <option value="" class="fa-solid fa-filter">Sort</option>
+          <option value="low" class="fa-solid fa-filter">Low</option>
+          <option value="high" class="fa-solid fa-filter">High</option>
+        </select>
+        <div class="search-container">
+          <input type="text" class="searchbar" placeholder="Search for food" />
+        </div>
+      </div>
+    </div>
+
+    <div class="main">
+      <!-- left -->
+      <div class="left-panel">
+        <div>
+          <h2>Category</h2>
+          <label class="radioo" data-id="">All</label>
+          <label class="radioo" data-id="a">Salad</label>
+          <label class="radioo" data-id="2">Papad</label>
+          <label class="radioo" data-id="3">Paneer Ka Swad</label>
+          <label class="radioo" data-id="4">Daal ka Tadka</label>
+          <label class="radioo" data-id="5">Sabzio Ka Khazana</label>
+          <label class="radioo" data-id="6">Veg. & Kofta</label>
+          <label class="radioo" data-id="7">Gujrati Menu</label>
+          <label class="radioo" data-id="8">Garma Garam Tawe Se</label>
+          <label class="radioo" data-id="9">Basmati Ki Bahar</label>
+          <label class="radioo" data-id="10">Meethe Manuhar</label>
+          <label class="radioo" data-id="11">Dahi & Raita</label>
+          <label class="radioo" data-id="12">little To Much</label>
+        </div>
+      </div>
+
+      <div class="menu-container"></div>
+
+      <!-- BOTTOM NAVIGATION -->
+      <div class="popup-menu">
+        <h2>Category</h2>
+        <label class="radioo" data-id="">All</label>
+        <label class="radioo" data-id="a">Salad</label>
+        <label class="radioo" data-id="2">Papad</label>
+        <label class="radioo" data-id="3">Paneer Ka Swad</label>
+        <label class="radioo" data-id="4">Daal ka Tadka</label>
+        <label class="radioo" data-id="5">Sabzio Ka Khazana</label>
+        <label class="radioo" data-id="6">Veg. & Kofta</label>
+        <label class="radioo" data-id="7">Gujrati Menu</label>
+        <label class="radioo" data-id="8">Garma Garam Tawe Se</label>
+        <label class="radioo" data-id="9">Basmati Ki Bahar</label>
+        <label class="radioo" data-id="10">Meethe Manuhar</label>
+        <label class="radioo" data-id="11">Dahi & Raita</label>
+        <label class="radioo" data-id="12">little To Much</label>
+      </div>
+      <button class="show-menu">
+        <span class="fa fa-utensils" style="font-size: 25px"></span>
+      </button>
+      <div class="bottom-nav">
+        <a href="/index.html">
+          <i class="fas fa-home"></i>
+          <span>Home</span>
+        </a>
+        <a href="/pages/user.html">
+          <i class="fas fa-user"></i>
+          <span>My Profile</span>
+        </a>
+        <a href="/pages/cart.html">
+          <i class="fas fa-shopping-cart"></i>
+          <span>Cart</span>
+        </a>
+      </div>
+    </div>
+    <script type="module" src="../script/menu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>

@@ -1,200 +1,309 @@
-body {
-    font-family: "Montserrat", sans-serif;
-    text-align: center;
+* {
+  scrollbar-width: none;
 }
 
+body {
+  font-family: "Poppins", sans-serif;
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+  text-align: center;
+}
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-    font-family: "Montserrat";
+  font-family: "Montserrat";
 }
 
 p {
-    color: #3b3b3b;
+  color: #3b3b3b;
 }
 
-
-/* headingggggggggg */
-
+/* Big Heading */
 .big-heading {
-    font-family: "Montserrat, sans-serif";
-    font-size: 3rem;
-    line-height: 1.5;
-    font-weight: 900;
-    color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  display: flex;
+  line-height: 1.5;
+  font-weight: 900;
+  margin: 10px;
+  padding-top: 10px;
+  justify-content: center;
+  color: #fff;
 }
 
-
-/* contianers */
-
+/* Containers */
 .container-fluid {
-    padding: 7% 15%;
+  padding: 0 15%;
 }
-
-
-/* nav-bar */
 
 .navbar {
-    padding: 0 0 4.5rem;
+  display: flex;
+  flex-direction: row;
+  padding: 0 0 4.5rem;
 }
 
 .navbar-brand {
-    font-family: "Ubuntu", sans-serif;
-    font-size: 2rem;
-    font-weight: bold;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 4em;
+  font-weight: bold;
+}
+
+/* link on menu toggler */
+.navbar-toggler-icon {
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  vertical-align: middle;
+  content: "";
+  background: no-repeat center center;
+  background-size: 100% 100%;
+  font-size: 20px;
+  outline: none;
 }
 
 .nav-item {
-    padding: 0 18px;
+  padding: 0 18px;
 }
 
 .nav-link {
-    font-size: 1.2rem;
-    font-family: "Montserrat";
+  font-size: 1.2rem;
+  font-family: "Montserrat";
 }
 
-.download-button {
-    margin: 5% 3% 5% 0;
-}
-
-
-/* titlesection */
-
+/* Title Section */
 #title {
-    background-color: #c06014;
-    text-align: left;
+  background-color: #c06014;
+  text-align: left;
 }
 
 #title .container-fluid {
-    padding: 3% 15% 7%;
+  padding: 3% 15%;
 }
 
-.whatapp_link {
-    color: white;
+/* Links */
+.whatsapp a,
+.menupage a {
+  display: inline-block;
+  padding: 15px 25px;
+  color: white;
+  background-color: #1ebe57;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  border-radius: 50px;
+  font-size: 16px;
+  margin: 10px 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.whatapp_link:hover {
-    color: rgb(240, 231, 231);
+.whatsapp a:hover {
+  color: #11a146;
+  background-color: rgb(236, 236, 236);
+  transform: scale(1.05);
 }
 
-.swiggy_link {
-    color: white;
+.menupage a {
+  border: 1px solid black;
+  background-color: #3498db00;
 }
 
-.swiggy_link:hover {
-    color: black;
+.menupage a:hover {
+  color: #c06014;
+  background-color: rgb(236, 236, 236);
+  transform: scale(1.05);
+}
+.button-div > .big-heading {
+  justify-content: flex-start;
+}
+/* Button Styling */
+button.whatsapp,
+button.menupage {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: none;
+  outline: none;
 }
 
-.iphone {
-    /* margin: 30px auto auto 40px; */
-    transform: rotate(25deg);
-    width: 60%;
-    position: absolute;
-    right: 30%;
+/* Features Section */
+.overview > h1 {
+  color: #c06014;
 }
-
-
-/* features section */
 
 #features {
-    background-color: white;
-    position: relative;
-    z-index: 1;
+  background-color: white;
+  position: relative;
+  z-index: 1;
 }
 
 .feature-title {
-    font-size: 1.5rem;
-    font-weight: bold;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .feature-box {
-    padding: 5%;
+  padding: 5%;
 }
 
 .icon {
-    margin-bottom: 1rem;
-    color: #c06014;
+  margin-bottom: 10px;
+  color: #c06014;
 }
 
 .icon:hover {
-    color: #131213;
+  color: #131213;
 }
 
-
-/* food items  carousel part*/
-
+/* Food Items Carousel */
 #food_items {
-    background-color: #c06014;
-    /* color: #461111; */
+  background-color: #c06014;
 }
 
 .items-profile {
-    width: 45%;
-    margin: 20px;
-    border-radius: 100%;
+  width: 45%;
+  margin: 20px;
+  border-radius: 100%;
 }
 
-
-/* pricing section */
-
+/* Pricing Section */
 #pricing {
-    padding: 100px;
+  padding: 5% 15%;
 }
 
 .full_meal {
-    padding-top: 50px;
+  padding-top: 50px;
 }
 
 .meal_heading {
-    font-size: 2rem;
-    font-family: "Ubuntu", sans-serif;
-}
-
-.pricing-column {
-    padding: 3% 0%;
+  font-size: 2rem;
+  font-family: "Ubuntu", sans-serif;
 }
 
 .price-text {
-    font-size: 3rem;
-    line-height: 1.5;
-    font-weight: bold;
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: bold;
 }
-
-
-/* cta */
-
+/* Call to Action */
 #cta {
-    background-color: #c06014;
-    color: white;
+  background-color: #c06014;
+  color: white;
 }
 
 #cta .container-fluid {
-    padding: 3%;
+  padding: 20px 3%;
 }
 
+@media (max-width: 500px) {
+  #title .container-fluid {
+    padding: 20px;
+  }
+  .container-fluid {
+    padding: 0 20px;
+  }
+  .navbar {
+    padding: 0;
+  }
+  .navbar-brand {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .nav-link {
+    font-size: 1.5em;
+  }
 
-/* foooter */
+  .big-heading {
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+    text-wrap: nowrap;
+    display: flex;
+    line-height: 1;
+    font-weight: 900;
+    margin: 10px 0;
+    justify-content: center;
+    color: #fff;
+  }
 
-#footer {
-    font-size: 1.5rem;
+  .button-div {
+    display: flex;
+    flex-direction: column;
+  }
+  #title {
+    text-align: center;
+  }
+  .whatsapp a,
+  .menupage a,
+  #cta a {
+    border-radius: 50px;
+    font-size: 16px;
+    width: 100%;
+    text-wrap: nowrap;
+    padding: 15px 25px;
+    margin: 4px;
+    box-sizing: border-box;
+  }
+  #features .container-fluid .row {
+    font-size: 15px;
+    padding: 0 20%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+  .btn,
+  #features .container-fluid .row p,
+  .navbar-nav .ml-auto {
+    font-size: 1.5em;
+  }
+  #pricing {
+    font-size: 20px;
+    padding: 5%;
+  }
+  #pricing > .row {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* Scroll bar styles */
+  #pricing > .row::-webkit-scrollbar {
+    height: 2px; /* Adjust the height of the scrollbar */
+  }
+
+  #pricing > .row::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.5); /* Darker thumb */
+    border-radius: 10px; /* Rounded corners */
+  }
+
+  #pricing > .row::-webkit-scrollbar-track {
+    background: transparent; /* Lighter background for track */
+    border-radius: 10px;
+  }
+
+  /* Snap alignment */
+  .pricing-column {
+    scroll-snap-align: center;
+    flex: 0 0 auto;
+    width: 100%;
+  }
+
+  .card {
+    margin-top: 20px;
+  }
+
+  #cta .container-fluid {
+    display: flex;
+    flex-direction: column;
+  }
 }
-
-.social-icons {
-    margin: 20px 10px;
+#footer .container-fluid {
+  font-size: 1.2em;
+  padding: 0;
 }
-
-
-/* media quary */
-
-@media (max-width: 1028px) {
-    #title {
-        text-align: center;
-    }
-    .iphone {
-        position: static;
-        transform: rotate(0);
-    }
+#footer p {
+  margin: 10px;
 }

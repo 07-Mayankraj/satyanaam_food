@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <title>Cart</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="/images/stc_logo.png" />
+
+    <link rel="stylesheet" href="/css/cart.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-title">Satyanaam_Food</div>
+    </nav>
+
+    <!-- Main Cart Section -->
+    <div class="cart-container">
+      <h1>Your Meal Items</h1>
+      <div id="cart-items"></div>
+      <div class="cart-total">
+        <span>Total Price: ₹<span id="total-price">0</span></span>
+        <button onclick="popup()">Show QR <i class="fas fa-solid fa-qrcode"></i> </button>
+      </div>
+    </div>
+    <div class="bottom-nav">
+      <a href="/index.html">
+        <i class="fas fa-home"></i>
+        <span>Home</span>
+      </a>
+      <a href="/pages/user.html">
+        <i class="fas fa-user"></i>
+        <span>My Profile</span>
+      </a>
+      <a href="/pages/menu.html">
+        <i class="fas fa-utensils"></i>
+        <span>Menu</span>
+      </a>
+    </div>
+  </body>
+</html>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script type="module" src="/script/cart.js"></script>
