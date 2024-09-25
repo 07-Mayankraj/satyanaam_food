@@ -102,23 +102,29 @@ window.decreaseQuantity = function (index) {
 // Initial display of cart items
 display();
 
-// Popup for transferring items to order history
+// Popup for transferring items to order history and sending to WhatsApp
 window.popup = function () {
   Swal.fire({
-    title: "Scan The QR",
-    text: "Clicking the button will transfer items to history.",
+    title: `<code>abc@okhdfcbank</code>`,
+    html: `Save the order to history <br> or <br>  Send the order to WhatsApp.`,
     imageUrl: "/images/qr.png",
     imageWidth: 200,
     imageHeight: 200,
     imageAlt: "QR Code",
-    confirmButtonText: "Done",
+    showCancelButton: true,
+    showCloseButton: true,
+    allowOutsideClick: false,
+    confirmButtonText: "save",
+    cancelButtonText: "Send to WhatsApp",
+    confirmButtonColor: "#3085d6",
+    cancelButtonColor: "#1ebe57",
     preConfirm: async () => {
       // Prepare new order data
       const newOrder = {
         items: cart.map((item) => ({
           name: item.name,
           cost: item.cost,
-          quantity: item.quantity || 1, // Include quantity
+          quantity: item.quantity || 1,
         })),
         totalPrice: cart.reduce(
           (sum, item) => sum + item.cost * (item.quantity || 1),
@@ -126,16 +132,34 @@ window.popup = function () {
         ), // Calculate total price with quantity
         orderedOn: new Date().toISOString(), // Current date and time
       };
-      // Update history in localStorage
-      const existingHistory = JSON.parse(localStorage.getItem("history")) || [];
-      console.log(newOrder);
-      if (!newOrder) return;
+
+      // Add the order to history and clear the cart
       addOrderToHistory(newOrder);
       localStorage.removeItem("cart"); // Clear cart after transferring
     },
   }).then((result) => {
     if (result.isConfirmed) {
-      window.location.reload(); // Reload the page after confirming
+      window.location.reload();
+    } else if (result.dismiss === Swal.DismissReason.cancel) {
+      // Send cart items to WhatsApp and then move to history
+      sendCartItemsToWhatsApp();
+      const newOrder = {
+        items: cart.map((item) => ({
+          name: item.name,
+          cost: item.cost,
+          quantity: item.quantity || 1,
+        })),
+        totalPrice: cart.reduce(
+          (sum, item) => sum + item.cost * (item.quantity || 1),
+          0
+        ), // Calculate total price with quantity
+        orderedOn: new Date().toISOString(), // Current date and time
+      };
+
+      // Add the order to history
+      addOrderToHistory(newOrder);
+      localStorage.removeItem("cart"); // Clear cart after transferring
+      window.location.reload();
     }
   });
 };
@@ -155,3 +179,29 @@ function addOrderToHistory(order) {
     localStorage.setItem("history", JSON.stringify(history));
   }
 }
+
+// Function to send cart items to WhatsApp
+window.sendCartItemsToWhatsApp = function () {
+  const cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+  // Create a message string
+  let message = "This is my order:\n\n";
+  cart.forEach((item) => {
+    const quantity = item.quantity || 1; // Default to 1 if undefined
+    message += `- ${item.name}: ₹${item.cost} x ${quantity}\n`;
+  });
+  message += `\nTotal: ₹${cart.reduce(
+    (sum, item) => sum + item.cost * (item.quantity || 1),
+    0
+  )}`;
+
+  // Encode the message for URL
+  const encodedMessage = encodeURIComponent(message);
+
+  // Construct the WhatsApp link
+  const phoneNumber = "7665770832";
+  const whatsappLink = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodedMessage}`;
+
+  // Open the WhatsApp link
+  window.open(whatsappLink);
+};
