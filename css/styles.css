@@ -8,7 +8,6 @@ body {
   outline: none;
   text-align: center;
 }
-
 h1,
 h2,
 h3,
@@ -25,10 +24,13 @@ p {
 /* Big Heading */
 .big-heading {
   font-family: "Montserrat", sans-serif;
-  font-size: 3rem;
+  font-size: 2rem;
+  display: flex;
   line-height: 1.5;
   font-weight: 900;
   margin: 10px;
+  padding-top: 10px;
+  justify-content: center;
   color: #fff;
 }
 
@@ -37,15 +39,29 @@ p {
   padding: 0 15%;
 }
 
-/* Navbar */
 .navbar {
+  display: flex;
+  flex-direction: row;
   padding: 0 0 4.5rem;
 }
 
 .navbar-brand {
   font-family: "Ubuntu", sans-serif;
-  font-size: 4rem;
+  font-size: 4em;
   font-weight: bold;
+}
+
+/* link on menu toggler */
+.navbar-toggler-icon {
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  vertical-align: middle;
+  content: "";
+  background: no-repeat center center;
+  background-size: 100% 100%;
+  font-size: 20px;
+  outline: none;
 }
 
 .nav-item {
@@ -55,10 +71,6 @@ p {
 .nav-link {
   font-size: 1.2rem;
   font-family: "Montserrat";
-}
-
-.download-button {
-  margin: 5% 3% 5% 0;
 }
 
 /* Title Section */
@@ -81,8 +93,9 @@ p {
   text-decoration: none;
   font-weight: bold;
   border-radius: 5px;
+  border-radius: 50px;
   font-size: 16px;
-  margin: 10px;
+  margin: 10px 5px;
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
@@ -102,7 +115,9 @@ p {
   background-color: rgb(236, 236, 236);
   transform: scale(1.05);
 }
-
+.button-div > .big-heading {
+  justify-content: flex-start;
+}
 /* Button Styling */
 button.whatsapp,
 button.menupage {
@@ -114,6 +129,10 @@ button.menupage {
 }
 
 /* Features Section */
+.overview > h1 {
+  color: #c06014;
+}
+
 #features {
   background-color: white;
   position: relative;
@@ -124,24 +143,13 @@ button.menupage {
   font-size: 1.5rem;
   font-weight: bold;
 }
-.navbar-toggler-icon {
-  display: inline-block;
-  width: 3.5em;
-  height: 3.5em;
-  vertical-align: middle;
-  content: "";
-  background: no-repeat center center;
-  background-size: 100% 100%;
-  font-size: 20px;
-  outline: none;
-}
+
 .feature-box {
   padding: 5%;
-  text-align: left;
 }
 
 .icon {
-  margin-bottom: 1rem;
+  margin-bottom: 10px;
   color: #c06014;
 }
 
@@ -162,7 +170,7 @@ button.menupage {
 
 /* Pricing Section */
 #pricing {
-  padding: 20px 0px;
+  padding: 5% 15%;
 }
 
 .full_meal {
@@ -174,16 +182,11 @@ button.menupage {
   font-family: "Ubuntu", sans-serif;
 }
 
-.pricing-column {
-  padding: 0%;
-}
-
 .price-text {
   font-size: 3rem;
-  line-height: 1.5;
+  line-height: 1;
   font-weight: bold;
 }
-
 /* Call to Action */
 #cta {
   background-color: #c06014;
@@ -191,31 +194,10 @@ button.menupage {
 }
 
 #cta .container-fluid {
-  padding: 3%;
+  padding: 20px 3%;
 }
 
-/* Footer */
-#footer {
-  font-size: 1.5rem;
-}
-
-.social-icons {
-  margin: 20px 10px;
-}
-
-/* Overview Section */
-.overview {
-  z-index: 100;
-  width: 100%;
-  background-color: white;
-}
-
-.overview > h1 {
-  color: #c06014;
-}
-
-/* Media Queries */
-@media (max-width: 1023px) {
+@media (max-width: 500px) {
   #title .container-fluid {
     padding: 20px;
   }
@@ -226,15 +208,29 @@ button.menupage {
     padding: 0;
   }
   .navbar-brand {
-    width: auto;
-    flex-wrap: wrap;
-    font-size: 5rem;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 30px;
+    font-weight: bold;
   }
   .nav-link {
-    font-size: 2.5em;
+    font-size: 1.5em;
   }
+
+  .big-heading {
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+    text-wrap: nowrap;
+    display: flex;
+    line-height: 1;
+    font-weight: 900;
+    margin: 10px 0;
+    justify-content: center;
+    color: #fff;
+  }
+
   .button-div {
     display: flex;
+    flex-direction: column;
   }
   #title {
     text-align: center;
@@ -242,17 +238,18 @@ button.menupage {
   .whatsapp a,
   .menupage a,
   #cta a {
-    margin: 0;
-    margin-left: 10px;
-    font-size: 30px;
-    padding: 30px 40px;
     border-radius: 50px;
+    font-size: 16px;
+    width: 100%;
+    text-wrap: nowrap;
+    padding: 15px 25px;
+    margin: 4px;
+    box-sizing: border-box;
   }
   #features .container-fluid .row {
-    font-size: 20px;
-    padding: 0;
+    font-size: 15px;
+    padding: 0 20%;
     display: flex;
-    flex-wrap: nowrap;
     justify-content: center;
     flex-direction: row;
   }
@@ -262,64 +259,51 @@ button.menupage {
     font-size: 1.5em;
   }
   #pricing {
-    font-size: 30px;
+    font-size: 20px;
     padding: 5%;
   }
-  #footer .container-fluid {
-    font-size: 2em;
-    padding: 0;
+  #pricing > .row {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
   }
-}
 
-@media (max-width: 500px) {
-  * {
-    font-size: 14px;
+  /* Scroll bar styles */
+  #pricing > .row::-webkit-scrollbar {
+    height: 2px; /* Adjust the height of the scrollbar */
   }
-  .navbar-brand {
-    width: auto;
-    flex-wrap: wrap;
-    font-size: 2.5rem;
+
+  #pricing > .row::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.5); /* Darker thumb */
+    border-radius: 10px; /* Rounded corners */
   }
-  .navbar-toggler-icon {
-    width: 2em;
-    height: 2em;
+
+  #pricing > .row::-webkit-scrollbar-track {
+    background: transparent; /* Lighter background for track */
+    border-radius: 10px;
   }
-  .big-heading {
-    width: auto;
-    flex-wrap: wrap;
-    font-size: 2rem;
-    margin: 0;
+
+  /* Snap alignment */
+  .pricing-column {
+    scroll-snap-align: center;
+    flex: 0 0 auto;
+    width: 100%;
   }
-  .button-div {
-    justify-content: space-between;
-    display: flex;
-}
-  #features .container-fluid .row {
-    margin: auto;
+
+  .card {
+    margin-top: 20px;
+  }
+
+  #cta .container-fluid {
     display: flex;
     flex-direction: column;
   }
-  #features .container-fluid .row  div{
-    text-align: center;
-    padding: 0;
-
-  }
-  #title {
-    text-align: center;
-  }
-  .whatsapp a,
-  .menupage a,
-  #cta a {
-    font-size: 12px;
-    padding: 15px 25px;
-    margin: auto 4px;
-  }
-  .container-fluid i{
-    font-size: 20px;
-    margin: auto 5px;
-  }
 }
-
 #footer .container-fluid {
-  padding: 0 15%;
+  font-size: 1.2em;
+  padding: 0;
+}
+#footer p {
+  margin: 10px;
 }
